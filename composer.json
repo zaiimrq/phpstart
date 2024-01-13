@@ -10,12 +10,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "phpstart\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "phpstart\\": "tests/"
+            "Test\\": "tests/"
         }
     },
     "require": {

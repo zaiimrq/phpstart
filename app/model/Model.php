@@ -1,6 +1,6 @@
 <?php
 
-namespace phpstart\model;
+namespace App\model;
 
 trait Model
 {
