@@ -1,1 +1,1 @@
-# phpstart
+# The PHPMVC Starter Kit
