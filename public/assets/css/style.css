@@ -1,0 +1,12 @@
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    color: red;
+}
+
+button {
+    margin-left: 45%;
+}
