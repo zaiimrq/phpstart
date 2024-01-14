@@ -8,11 +8,10 @@ class Route
     public static function __callStatic($method, $args)
     {
         if (Route::method() == strtoupper($method) && Route::is($args[0])) {
-            call_user_func(
-                is_callable($args[1]) ?
-                    $args[1] :
-                    [new $args[1][0], $args[1][1]]
-            );
+
+            is_callable($args[1]) ?
+                call_user_func($args[1]) :
+                call_user_func_array([$args[1][0], $args[1][0]], $_REQUEST);
 
             foreach ($args[2] ?? [] as $arg) {
                 call_user_func([new $arg, 'middleware']);

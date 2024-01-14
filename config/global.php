@@ -1,7 +1,6 @@
 <?php
 
-$env = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
-$env->load();
+use App\core\Route;
 
 function env(string $env): string
 {
@@ -12,3 +11,8 @@ function public_path(): string
 {
     return __DIR__ . '/../public';
 }
+
+// function baseurl(): string
+// {
+//     // return 
+// }

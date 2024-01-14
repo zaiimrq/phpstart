@@ -6,5 +6,6 @@ class SampleController
 {
     public function index()
     {
+        echo "SampleController / index";
     }
 }
