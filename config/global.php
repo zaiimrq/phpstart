@@ -10,7 +10,7 @@ function public_path(): string
     return __DIR__ . '/../public';
 }
 
-function baseurl(): string
+function baseurl(string $path): string
 {
-    return env('BASEURL');
+    return env('BASEURL') . '/' . $path;
 }
